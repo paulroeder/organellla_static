@@ -88,18 +88,29 @@ h2 {
   font-size: 2.5rem;
 }
 
+.vjs-remaining-time-display {
+  font-family: chaparral-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+
+}
+
 .topic {
   margin-bottom: 5%
 }
 .topic img {
   width: 100%;
 }
-.video-js .vjs-volume-menu-button {
-  display:none;
+.licence img {
+  width: auto;
+  padding-bottom: 20px;
 }
-.video-js.vjs-fullscreen .vjs-volume-menu-button {
-  display:block;
+.licence {
+  padding-top: 3%;
+  font-size: 0.8em;
+  color: #D3CAC6
 }
+
 
 
 .video-js .vjs-big-play-button {
@@ -122,8 +133,19 @@ background: transparent
 
 
 .vjs-big-play-centered .vjs-big-play-button {
-    top: 46%;
+    top: 40%;
 }
+
+@media (min-width: 800px) {
+
+  .vjs-big-play-centered .vjs-big-play-button {
+      top: 46%;
+  }
+
+
+
+}
+
 
 .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
   top: 20
@@ -131,4 +153,12 @@ background: transparent
 
 .video-js {
    margin-bottom: 20px;
+}
+
+.video-js .vjs-volume-panel {
+  display: none;
+}
+
+.video-js .vjs-load-progress {
+  background: #2C211C
 }
